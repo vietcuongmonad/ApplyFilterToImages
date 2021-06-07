@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Apply Filter To Images</title>
+    </head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="filter.js"></script>
+
+    <body>
+        <div class="Upload">
+            <h2>Please select an image file.</h2>
+            <input type="file" multiple="false" accept="image/*" onchange="upload()" id="FileInput">
+            <p></p>
+            <canvas id="data"></canvas>
+            <p id="volume"></p>
+        </div>
+
+        <div class="Filter">
+            <h2>Choose filter</h2>
+            <p>
+                <input type="button" value="Grayscale" onclick="Grayscale()">
+                <input type="button" value="Rainbow" onclick="Rainbow()">
+                <input type="button" value="Blood" onclick="Blood()">
+                <input type="button" value="Window" onclick="Window()">
+                <input type="button" value="Mr. Sun" onclick="Sun()">
+                <input type="button" value="Blur" onclick="Blur()">
+            </p>
+
+          <p>
+            <input type="button" value="Reset picture" onclick="Reset()">
+          </p>
+        </div>
+    </body>
+</html>
